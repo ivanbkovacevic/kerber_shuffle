@@ -1,7 +1,8 @@
 import "./style.css";
 import { useState} from "react";
 import { Cards } from "./Cards";
-import bgngPizza  from "./beggining-pizza.jpg";
+import kerber from "./kerber.png";
+
 
 export default function App() {
 
@@ -43,7 +44,9 @@ export default function App() {
 
   return (
     <div className="main-container">
-      <div className="header"><h1>CARDS SHUFFLING APP</h1></div>
+      <div className="header"><h1>CARDS SHUFFLING APP</h1>
+      <img src={kerber}></img>
+      </div>
     
       <div className="buttons-container">
           <button onClick={startInterval}>Click to shuffle cards</button>
