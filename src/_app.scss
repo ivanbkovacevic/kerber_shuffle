@@ -1,0 +1,81 @@
+.main-container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    ". buttons buttons ."
+    "card-cont card-cont card-cont card-cont";
+    color:red;
+
+    .header{
+       justify-self: stretch;
+        font-size: 2rem;
+        grid-area: header;
+        background-color: darkred;
+        color:wheat;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .buttons-container{
+       
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            grid-area: buttons;  
+            background-color: lightgreen;
+            button{
+                color:white;
+                background-color: darkred;   
+                border:none;
+                outline: 1px solid white;
+                padding: 10px;
+                margin: 10px;
+                transition: all 0.3s;
+                width: 200px;
+                &:hover{
+                    color: darkred;   
+                    background-color: white;
+                }
+            } 
+      
+    }
+
+    .card-container{
+        grid-area: card-cont; 
+        justify-self: stretch;
+        align-self: flex-start;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        .img-cont{
+            display: flex;
+            justify-content: center;
+            width: 350px;
+            background-color: lightcoral;
+            img{
+                width: 100%;
+            }
+        }
+      
+        .description{
+            font-size: 1rem;
+            color: black;
+            background-color: lightblue;
+            width: 200px;
+            padding: 20px;
+        }
+    }
+    
+}

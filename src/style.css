@@ -1,0 +1,141 @@
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "header header header header" ". buttons buttons ." "card-cont card-cont card-cont card-cont";
+  color: red;
+}
+
+.main-container .header {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  font-size: 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  background-color: darkred;
+  color: wheat;
+  text-align: center;
+  padding: 40px;
+}
+
+.main-container .buttons-container {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: buttons;
+  background-color: lightgreen;
+}
+
+.main-container .buttons-container button {
+  color: white;
+  background-color: darkred;
+  border: none;
+  outline: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.main-container .buttons-container button:hover {
+  color: darkred;
+  background-color: white;
+}
+
+.main-container .card-container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: card-cont;
+  justify-self: stretch;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container .card-container .img-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  background-color: lightcoral;
+}
+
+.main-container .card-container .img-cont img {
+  width: 100%;
+}
+
+.main-container .card-container .description {
+  font-size: 1rem;
+  color: black;
+  background-color: lightblue;
+  width: 200px;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: white;
+}
+
+/* 
+////////////////PRE SET/////////////////////////// */
+/*# sourceMappingURL=style.css.map */
