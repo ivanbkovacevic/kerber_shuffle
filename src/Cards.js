@@ -89,7 +89,7 @@ export const Cards=[
     },
     {
     "id": 8,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
+    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
     "name": "Vegeteriana",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -100,7 +100,7 @@ export const Cards=[
     },
     {
     "id": 9,
-    "imageUrl": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/2/28/1/FNM_040112-Copy-That-002_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382541346030.jpeg",
+    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
     "name": "Barbecue",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -111,7 +111,7 @@ export const Cards=[
     },
     {
     "id": 10,
-    "imageUrl": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/2/28/1/FNM_040112-Copy-That-002_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382541346030.jpeg",
+    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
     "name": "Coca-Cola",
     "types": 'drinks',
     "sizes": [26, 30, 40],

@@ -1,30 +1,33 @@
 import "./style.css";
-import { useState } from "react";
+import { useState} from "react";
 import { Cards } from "./Cards";
+import bgngPizza  from "./beggining-pizza.jpg";
 
 export default function App() {
 
-  const [cardToDisplay, setCardToDisplay] = useState(Cards[0].imageUrl);
-
+  const [cardToDisplay, setCardToDisplay] = useState(Cards[0]);
   const [start, setStart] = useState("");
+  const[beforeFirstClick,setBeforeFirstClick]=useState(true);
  
 
   let tempCardNum = 0;
   const startInterval = () => {
+   
     setStart(setInterval(printCard, 300));
   };
 
   const printCard = () => {
+    setBeforeFirstClick(false)
     if (tempCardNum === Cards.length - 1) {
       tempCardNum = 0;
    
-      setCardToDisplay(Cards[tempCardNum].imageUrl);
+      setCardToDisplay(Cards[tempCardNum]);
        console.log(Cards.length);
     console.log(tempCardNum + "cardnum");
     } else {
       tempCardNum++;
      
-      setCardToDisplay(Cards[tempCardNum].imageUrl);
+      setCardToDisplay(Cards[tempCardNum]);
     }
 
     console.log("printCardddd");
@@ -47,11 +50,16 @@ export default function App() {
           <button onClick={stopInterval}>Stop the shuffle</button>
       </div>
      <div className="card-container">
-       <div className="img-cont"><img src={cardToDisplay} alt="nsto"></img></div>
+       <div className="img-cont">
+         <img src={cardToDisplay.imageUrl} alt="nsto"></img>
+         </div>
   
-     <div className="description">In Italy, pizza served in formal settings, such as at a restaurant, is presented unsliced, and is eaten with the use of a knife and fork.[2][3] In casual settings, however, it is cut into wedges to be eaten while held in the hand.
-
-.</div>
+     <div className="description">
+       <h2>{cardToDisplay.name}</h2>
+       In Italy, pizza served in formal settings, such as at a restau
+     rant, is presented unsliced, and is eaten with the use of a knife and fork.[2][3] In casua
+     l settings, however, it is cut into wedges to be eaten while held in the hand.
+     </div>
      </div>
      
     </div>
