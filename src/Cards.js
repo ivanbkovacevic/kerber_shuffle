@@ -1,7 +1,24 @@
+import img1 from './images/1.jpg';
+import img2 from './images/2.jpg';
+import img3 from './images/3.jpg';
+import img4 from './images/4.jpg';
+import img5 from './images/5.jpg';
+import img6 from './images/6.jpg';
+import img7 from './images/7.jpg';
+import img8 from './images/8.jpg';
+import img9 from './images/9.jpg';
+import img10 from './images/10.jpg';
+import img11 from './images/11.jpg';
+import img12 from './images/12.jpg';
+import img13 from './images/13.jpg';
+import img14 from './images/14.jpg';
+import img15 from './images/15.jpg';
+import img16 from './images/16.jpg';
+
 export const Cards=[
     {
     "id": 0,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "imageUrl": img1,
     "name": "Braccio di Ferro",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -12,7 +29,7 @@ export const Cards=[
     },
     {
     "id": 1,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
+    "imageUrl": img2,
     "name": "Napoletana",
     "types": 'pizza',
     "sizes": [26, 40],
@@ -23,7 +40,7 @@ export const Cards=[
     },
     {
     "id": 2,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
+    "imageUrl": img3,
     "name": "Carbonara",
     "types": 'pizza',
     "sizes": [26, 40],
@@ -34,7 +51,7 @@ export const Cards=[
     },
     {
     "id": 3,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
+    "imageUrl": img4,
     "name": "Americana",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -45,7 +62,7 @@ export const Cards=[
     },
     {
     "id": 4,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "imageUrl": img5,
     "name": "Quattro Stagioni",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -56,7 +73,7 @@ export const Cards=[
     },
     {
     "id": 5,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
+    "imageUrl": img6,
     "name": "Red peperoni",
     "types": 'pizza',
     "sizes": [30, 40],
@@ -67,7 +84,7 @@ export const Cards=[
     },
     {
     "id": 6,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
+    "imageUrl": img7,
     "name": "Peperoni",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -78,7 +95,7 @@ export const Cards=[
     },
     {
     "id": 7,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
+    "imageUrl": img8,
     "name": "Margherita",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -89,7 +106,7 @@ export const Cards=[
     },
     {
     "id": 8,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
+    "imageUrl": img9,
     "name": "Vegeteriana",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -100,7 +117,7 @@ export const Cards=[
     },
     {
     "id": 9,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
+    "imageUrl": img10,
     "name": "Barbecue",
     "types": 'pizza',
     "sizes": [26, 30, 40],
@@ -111,7 +128,7 @@ export const Cards=[
     },
     {
     "id": 10,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
+    "imageUrl": img11,
     "name": "Coca-Cola",
     "types": 'drinks',
     "sizes": [26, 30, 40],
@@ -122,7 +139,7 @@ export const Cards=[
     },
     {
     "id": 11,
-    "imageUrl": "https://www.ediskont.rs/uploads/store/products/images/pepsi_025l_640.jpg",
+    "imageUrl": img12,
     "name": "Pepsi",
     "types": 'drinks',
     "sizes": [26, 30, 40],
@@ -133,7 +150,7 @@ export const Cards=[
     },
     {
     "id": 12,
-    "imageUrl": "https://assets.sainsburys-groceries.co.uk/gol/2900766/1/640x640.jpg",
+    "imageUrl": img13,
     "name": "Fanta",
     "types": 'drinks',
     "sizes": [26, 30, 40],
@@ -141,6 +158,39 @@ export const Cards=[
     "category": 4,
     "rating": 10,
     "qnt":0
-    }
+    },
+    {
+        "id": 12,
+        "imageUrl": img13,
+        "name": "Fanta",
+        "types": 'drinks',
+        "sizes": [26, 30, 40],
+        "price": 9,
+        "category": 4,
+        "rating": 10,
+        "qnt":0
+        },
+        {
+            "id": 12,
+            "imageUrl": img15,
+            "name": "Fanta",
+            "types": 'drinks',
+            "sizes": [26, 30, 40],
+            "price": 9,
+            "category": 4,
+            "rating": 10,
+            "qnt":0
+            },
+            {
+                "id": 12,
+                "imageUrl": img16,
+                "name": "Fanta",
+                "types": 'drinks',
+                "sizes": [26, 30, 40],
+                "price": 9,
+                "category": 4,
+                "rating": 10,
+                "qnt":0
+                }
     ]
     export default [Cards]

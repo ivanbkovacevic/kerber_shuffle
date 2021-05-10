@@ -3,11 +3,12 @@
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header header"
     ". buttons buttons ."
-    "card-cont card-cont card-cont card-cont";
+    "card-cont card-cont card-cont card-cont"
+    '. slice-cont slice-cont .';
     color:red;
 
     .header{

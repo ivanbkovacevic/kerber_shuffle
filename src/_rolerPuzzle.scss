@@ -1,0 +1,19 @@
+.roler-puzzle-main-cont{
+    width: 600px;
+    height: 600px;
+    grid-area: puzzle;
+    background-color: deeppink;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'sqr1 sqr2 sqr3'
+    'sqr4 sqr5 sqr6'
+    'sqr7 sqr8 sqr9'
+    ;
+
+    .sqr{
+        background-color: forestgreen;
+    }
+}

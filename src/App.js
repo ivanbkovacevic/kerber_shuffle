@@ -1,48 +1,41 @@
 import "./style.css";
 import { useState} from "react";
 import { Cards } from "./Cards";
+import RolerPuzzle from './RolerPuzzle'
 import kerber from "./kerber.png";
-
+import SliceAndRotate from "./SliceAndRotate";
 
 export default function App() {
 
   const [cardToDisplay, setCardToDisplay] = useState(Cards[0]);
   const [start, setStart] = useState("");
   const[beforeFirstClick,setBeforeFirstClick]=useState(true);
- 
 
   let tempCardNum = 0;
   const startInterval = () => {
-   
-    setStart(setInterval(printCard, 300));
+    setStart(setInterval(printCard, 100));
   };
 
   const printCard = () => {
     setBeforeFirstClick(false)
     if (tempCardNum === Cards.length - 1) {
       tempCardNum = 0;
-   
       setCardToDisplay(Cards[tempCardNum]);
-       console.log(Cards.length);
-    console.log(tempCardNum + "cardnum");
+
     } else {
       tempCardNum++;
      
       setCardToDisplay(Cards[tempCardNum]);
     }
-
-    console.log("printCardddd");
-    console.log(Cards.length);
    
   };
 
   const stopInterval = () => {
     clearInterval(start);
-   
-    console.log("stop");
   };
 
   return (
+
     <div className="main-container">
       <div className="header"><h1>CARDS SHUFFLING APP</h1>
       <img src={kerber}></img>
@@ -56,6 +49,7 @@ export default function App() {
        <div className="img-cont">
          <img src={cardToDisplay.imageUrl} alt="nsto"></img>
          </div>
+       
   
      <div className="description">
        <h2>{cardToDisplay.name}</h2>
@@ -64,7 +58,8 @@ export default function App() {
      l settings, however, it is cut into wedges to be eaten while held in the hand.
      </div>
      </div>
-     
+     <SliceAndRotate />
+     {/* <RolerPuzzle /> */}
     </div>
   );
 }
