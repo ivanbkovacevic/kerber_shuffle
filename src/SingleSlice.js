@@ -12,7 +12,7 @@ function SingleSlice(props) {
     const imgContStyle = {
    
         backgroundImage: `url(${Images[8].imgSource})`,/* The image used */
-        backgroundColor: "#cccccc", /* Used if the image is unavailable */
+        backgroundColor: "black", /* Used if the image is unavailable */
         /* You must set a specified height */
         backgroundPositionY: ` ${props.slice}px`, /* Center the image */
         backgroundRepeat: "no-repeat" ,/* Do not repeat the image */
