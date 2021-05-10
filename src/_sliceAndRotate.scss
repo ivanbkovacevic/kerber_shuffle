@@ -1,19 +1,47 @@
 .slice-rotate-main-cont{
+  position: relative;
     grid-area: slice-cont;
-   // border:2px solid red;
+  justify-self: center;
+    width: 550px;
     height: 350px;
     margin-bottom: 50px;
+   
+    .slice-back-cont{
+      position: absolute;
+      background-color: white;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+    }
+  
    
 
   .single-slice-cont{
     width:100%;
-    height:10%;
+    height:2%;
     border: none;
     transition: all 0.5s ease-out;
-   &:hover{
-       background-position-x: 100px ;
-   }
+  //  &:hover{
+  //      transform: translate(100px);
+  //  }
+  }
+  .mouse-ent-class{
+    animation: slidingEnter 1s ease-out forwards;
+  }
+  .mouse-leave-class{
+    animation: slidingLeave 1s ease-out forwards;
   }
 
     
+}
+@keyframes slidingEnter{
+  0%   { transform: translate(0px);}
+  100%  { transform: translate(50px);}
+}
+@keyframes slidingLeave{
+  0%   { transform: translate(50px);}
+  80%  { transform: translate(-20px);}
+  100%  { transform: translate(0px);}
 }

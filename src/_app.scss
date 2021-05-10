@@ -1,18 +1,20 @@
 .main-container{
     display: grid;
     width: 100vw;
-    height: 200vh;
+    height: 1000px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
     ". buttons buttons ."
     "card-cont card-cont card-cont card-cont"
-    '. slice-cont slice-cont .';
+    "instructions instructions instructions instructions"
+    'slice-cont slice-cont slice-cont slice-cont';
     color:red;
 
     .header{
        justify-self: stretch;
+       align-self: start;
         font-size: 2rem;
         grid-area: header;
         background-color: darkred;
@@ -27,7 +29,7 @@
     .buttons-container{
        
             justify-self: center;
-            align-self: center;
+            align-self: start;
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -57,11 +59,11 @@
     .card-container{
         grid-area: card-cont; 
         justify-self: stretch;
-        align-self: flex-start;
+        align-self: start;
 
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: stretch;
         width: 100%;
         flex-wrap: wrap;
         .img-cont{
@@ -78,9 +80,20 @@
             font-size: 1rem;
             color: black;
             background-color: lightblue;
-            width: 200px;
+            width: 250px;
+            height:350 ;
             padding: 20px;
         }
+    }
+
+    .instructions{
+        grid-area: instructions;
+        font-size: 1.5rem;
+        color: black;
+        background-color: lightsalmon;
+        justify-self: center;
+        padding: 5px;
+        margin-bottom: 5px;
     }
     
 }

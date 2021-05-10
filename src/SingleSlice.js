@@ -1,18 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import {Images} from './Images'
 
 function SingleSlice(props) {
 
-    let imageHeight=React.createRef();
-    console.log(imageHeight);
+    const imageLoaded=()=>{
+        let imageHeight=React.createRef();
+        console.log(imageHeight.height);
+    }
 
+    const[mouseEnt,setMouseEnter]= useState('');
 
-    const[posY,setPosY]=useState(0);
-    const[mouseEnter,setMouseEnter]= useState(false);
+    const mouseEntersFunc=()=>{
+        setMouseEnter('mouse-ent-class');
+    }
+
+    const mouseLeaveFunc=()=>{
+        setMouseEnter('mouse-leave-class');
+    }
+
     const imgContStyle = {
-   
-        backgroundImage: `url(${Images[8].imgSource})`,/* The image used */
-        backgroundColor: "black", /* Used if the image is unavailable */
+        backgroundImage: `url(${Images[9].imgSource})`,/* The image used */
+      //  backgroundColor: "white", /* Used if the image is unavailable */
         /* You must set a specified height */
         backgroundPositionY: ` ${props.slice}px`, /* Center the image */
         backgroundRepeat: "no-repeat" ,/* Do not repeat the image */
@@ -21,13 +29,14 @@ function SingleSlice(props) {
         
       };
     return (
-     
-            <div className="single-slice-cont" style={imgContStyle} >
-            
-                {/* <img ref={imageHeight} src={Images[8].imgSource} alt='neeh'></img> */}
+    
+                <div className={`single-slice-cont ${mouseEnt}`} style={imgContStyle} 
+                    onMouseEnter={mouseEntersFunc}
+                    onMouseLeave={mouseLeaveFunc}>
+                       
             </div>
-     
-    );
+               
+              );
 }
  
 export default SingleSlice;

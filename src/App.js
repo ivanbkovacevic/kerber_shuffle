@@ -58,6 +58,8 @@ export default function App() {
      l settings, however, it is cut into wedges to be eaten while held in the hand.
      </div>
      </div>
+     <div className="instructions">Move mouse over the picture slowly from top to bottom and back</div>
+    
      <SliceAndRotate />
      {/* <RolerPuzzle /> */}
     </div>
