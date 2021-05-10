@@ -140,7 +140,7 @@
   -ms-grid-column-span: 2;
   grid-area: slice-cont;
   height: 350px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .slice-rotate-main-cont .single-slice-cont {
